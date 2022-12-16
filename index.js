@@ -20,7 +20,7 @@ app.get('/', async (req, res) => {
     }); 
 });
 
-app.post('/', async (req, res) => {
+app.post('/crear', async (req, res) => {
     console.log(req.body);
         await PersonaControllers.create(req.body);
     res.json('Usuario Creado')
