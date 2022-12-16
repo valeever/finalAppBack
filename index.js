@@ -11,7 +11,6 @@ const PersonaControllers = require('./controllers/persona');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-    origin: 'http://localhost:3000'
 })); 
 
 app.get('/', async (req, res) => {
