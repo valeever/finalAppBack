@@ -1,7 +1,7 @@
 
 const mongoose = require('mongoose');
 require('dotenv').config();
-const URL = process.env.MONGO;
+const URL = process.env.MONGOATLAS;
 mongoose.set('strictQuery', true);
 
 const conexion =  mongoose.connect(URL, { 
