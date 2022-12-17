@@ -4,7 +4,7 @@ class PersonaControllers {
 
     async findAll(){
         try {
-            return await Persona.find().lean();
+            return await Persona.find();
         } catch (error) {
             throw error;
         }
